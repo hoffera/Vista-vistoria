@@ -1,5 +1,8 @@
 # Copie para ".env" na raiz (junto ao pubspec.yaml). O pubspec inclui ".env" como asset.
 # O .env está no .gitignore — em clone novo: copie este ficheiro para .env antes do flutter run.
+#
+# Deploy Vercel: defina as MESMAS chaves em Project → Settings → Environment Variables;
+# o script scripts/vercel-build.sh gera .env no servidor antes do flutter build web.
 
 # Login da app (ecrã inicial)
 APP_LOGIN=admin

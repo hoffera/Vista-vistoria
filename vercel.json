@@ -1,0 +1,5 @@
+{
+  "installCommand": "echo \"deps no script vercel-build\"",
+  "buildCommand": "bash scripts/vercel-build.sh",
+  "outputDirectory": "build/web"
+}
