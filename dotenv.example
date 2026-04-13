@@ -1,0 +1,20 @@
+# Copie para ".env" na raiz (junto ao pubspec.yaml). O pubspec inclui ".env" como asset.
+# O .env está no .gitignore — em clone novo: copie este ficheiro para .env antes do flutter run.
+
+# Login da app (ecrã inicial)
+APP_LOGIN=admin
+APP_PASSWORD=
+
+# OAuth Client ID (tipo Web). Pode usar um destes nomes:
+GOOGLE_OAUTH_CLIENT_ID=
+# ou (alias aceite pelo app)
+ID_CLIENTE_GOOGLE=
+
+# A chave secreta OAuth não é usada pelo google_sign_in no browser; não a exponha no código web.
+
+# --- Google Cloud Console (erro 401 invalid_client / "no registered origin") ---
+# Credenciais → ID do cliente OAuth (tipo "Aplicativo da Web") →
+# "Origens JavaScript autorizadas": adicione a origem EXATA do app no Chrome,
+# ex.: http://localhost:60443 (veja a barra de endereço ao correr flutter run).
+# Também pode usar porta fixa: flutter run -d chrome --web-port=8080
+# e registar http://localhost:8080
